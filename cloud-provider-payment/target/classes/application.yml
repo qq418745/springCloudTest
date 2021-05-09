@@ -16,4 +16,6 @@ mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.springcloud.entities #实体类包
 
-
+com:
+  com:
+    springcloud:
