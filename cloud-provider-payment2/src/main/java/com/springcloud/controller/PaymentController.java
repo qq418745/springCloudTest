@@ -21,9 +21,9 @@ public class PaymentController {
         int result = paymentService.create(payment);
         log.info("*****插入结果："+result);
         if (result>0){  //成功
-            return new CommonResult(200,"插入数据库成功 8001",result);
+            return new CommonResult(200,"插入数据库成功 8002",result);
         }else {
-            return new CommonResult(444,"插入数据库失败 8001",null);
+            return new CommonResult(444,"插入数据库失败 8002",null);
         }
     }
     @GetMapping(value = "/payment/get/{id}")
@@ -32,9 +32,9 @@ public class PaymentController {
         log.info("*****查询结果："+payment);
         log.info("233333"+payment);
         if (payment!=null){  //说明有数据，能查询成功
-            return new CommonResult<>(200, "查询成功 8001", payment);
+            return new CommonResult<>(200, "查询成功 8002", payment);
         }else {
-            return new CommonResult<>(444,"没有对应记录，查询ID：8001"+id,null);
+            return new CommonResult<>(444,"没有对应记录，查询ID：8002"+id,null);
         }
     }
 }
